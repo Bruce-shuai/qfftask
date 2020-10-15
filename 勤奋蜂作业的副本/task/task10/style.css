@@ -1,0 +1,86 @@
+
+.box {
+    /* 此任务使用的是safari浏览器 故增加次行代码*/
+    display: -webkit-flex;   
+    display: flex;
+    height: 400px;
+    width: 800px;
+    /* margin: 20px; */
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    /* 换行 暂且好像还用不到 */
+    /* flex-wrap: ; */
+
+}
+
+@media screen and (max-width: 640px) { 
+    .box {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-content: flex-start;
+
+        height: 400px;
+        width: 480px;
+        padding: 20px;
+    }
+}
+div {
+    width: 150px;
+    /* margin-right: ; */
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.box1 {
+    height: 120px;
+    border-color: tomato;
+}
+
+.box2 {
+    height: 100px;
+    border-color: tomato;
+}
+
+.box3 {
+    height: 40px;
+    border-color: tomato;
+}
+
+.box4 {
+    height: 200px;
+    border-color: skyblue;
+}
+
+.box div {
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 640px) { 
+    .box .box4 {
+        order: -1;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .box .box1 {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .box .box2 {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .box .box3 {
+        margin-right: auto;
+    }
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            height: 600px;
+            width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            position: relative;
+            background-color: #eee;
+            border: 1px solid #999;
+        }
+
+        .right,
+        .left {
+            position: absolute;
+            top: 0;
+        }
+
+        .box .left {
+            height: 80px;
+            width: 160px;
+            margin-top: 20px;
+            /* float: left; */
+            padding: 20px;
+
+            left: 30px;
+            background-color: white;
+            border: 1px solid #999;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            padding: 20px;
+            background-image: url(http://imga5.5054399.com/upload_pic/2020/9/30/4399_16234139383.gif);
+            border: 1px solid #999;
+        }
+
+        .middle {
+            /* float: left; */
+            margin: 0 250px;
+            height: 500px;
+            /* padding: 20px; */
+            /* margin-left: 20px; */
+            /* margin-right: 20px; */
+            background-color: white;
+            border: 1px solid #999;
+        }
+
+        .right {
+            width: 80px;
+            /* float: right; */
+            right: 30px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #999;
+        }
+
+        .right .logo {
+            margin-bottom: 20px;
+        }
+
+        .word {
+            padding: 20px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="logo">
+
+            </div>
+        </div>
+        <div class="middle">
+            <div class="word">团队介绍</div>
+        </div>
+        <div class="right">
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
+</body>
+
+</html>

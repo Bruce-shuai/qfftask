@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w {
+    margin: 50px auto;
+}
+
+.new-css th{
+    border: 1px solid black;
+    background-color: black;
+}
+
+.new-css .website {
+    width: 140px;
+}
+
+.new-css th p{
+    float: left;
+    color: #fff;
+}
+
+.new-css td{
+    border: 1px solid black;
+}
+
+/* 前三排效果 */
+.same-color td {
+    color: blue;
+}
+/* 偶数时的颜色效果 */
+.new-css tbody tr:nth-child(odd) .color,
+.table-striped tbody tr:nth-child(odd) th {
+    color: red;
+}
+
+/* 奇数时的颜色效果 */
+.new-css tbody tr:nth-child(even) .color,
+.table-striped tbody tr:nth-child(even) th {
+    color: blue;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            height: 44px;
+            width: 1280px;
+            font-size: 13px;
+            line-height: 44px;
+            text-align: right;
+            background-color: #333333;
+            background-image: url(https://www.google.com.hk/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+            background-repeat: no-repeat;
+            background-size: 88px;
+            background-position: 16px;
+        }
+
+        body {
+            background-color: #dcdcdc;
+        }
+
+        .bottom {
+            background-color: #dedede;
+        }
+
+        .title_1 {
+            height: 800px;
+            width: 1230px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .title_2 {
+            height: 650px;
+            width: 1230px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            overflow: hidden;
+
+        }
+
+        .nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        h1 {
+            margin-top: 48px;
+            margin-left: 30px;
+        }
+
+        h2 {
+            margin-top: 24px;
+            margin-left: 28px;
+            color: #848781;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-left: 28px;
+            color: #878488;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-left: 28px;
+            margin-right: 30px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            margin-left: 28px;
+        }
+
+        li {
+            margin-top: 30px;
+            margin-left: 28px;
+            font-size: 22px;
+        }
+
+        .box {
+            margin-left: 88px;
+            margin-top: 28px;
+            height: 180px;
+            width: 150px;
+            border: 1px solid #848781;
+        }
+
+        .box p {
+            margin-top: 8px;
+            margin-left: 36px;
+            font-size: 14px;
+        }
+
+        .box img {
+            margin-top: 20px;
+            margin-left: 15px;
+            width: 80%;
+        }
+
+        .biaoge {
+            padding: 0;
+            margin-top: 46px;
+            margin-left: 28px;
+            width: 1150px;
+            height: 200px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* overflow: hidden; */
+        }
+
+        th {
+            color: white;
+            padding-right: 340px;
+            background-color: #333333;
+            border: 1px solid#cccccc;
+        }
+
+        tr {
+            border: 1px solid #cccccc;
+        }
+
+        td {
+            padding-left: 5px;
+            font-size: 14px;
+            font-weight: 450;
+            color: #04120e;
+            border: 1px solid #cccccc;
+        }
+
+        ol li {
+            margin-left: 68px;
+            font-size: 20px;
+            line-height: 14px;
+        }
+
+        .tr_bottom {
+            background-color: #cccccc;
+        }
+
+        .tr_bottom td {
+            font-weight: 900;
+            font-size: 16px;
+        }
+
+        form {
+            margin-left: 440px;
+            margin-top: 40px;
+        }
+
+        .tijiao input {
+            width: 1200px;
+            height: 50px;
+            font-size: 20px;
+            margin-left: 15px;
+            margin-top: 100px;
+            background-color: #3659cd;
+            color: #d1dae9;
+        }
+
+        .zuihou {
+            margin-top: 40px;
+            margin-left: 400px;
+        }
+
+        .zuihou td {
+            border: none;
+            height: 30px;
+            width: 110px;
+        }
+
+        .mima {
+            color: #ded2cf;
+        }
+
+        .kaoyou {
+            text-align: right;
+        }
+
+        .bottom2 {
+            height: 64px;
+            width: 1280px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .bottom2 div {
+            height: 20px;
+            width: 80px;
+            font-size: 10px;
+            margin: 15px auto;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        ●<a href="#">导航链接一</a>
+        ●<a href="#">导航链接二</a>
+        ●<a href="#">导航链接三</a>
+        ●<a href="#">导航链接四</a>
+    </div>
+    <div class="bottom">
+        <div class="title_1">
+            <h1>文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h3>文章作者 文章发布时间</h3>
+            <!-- 段落首空两格 -->
+            <p style="text-indent: 2em;">
+                《笑傲江湖》是中国现代作家金庸创作的一部长篇武侠小说，于1967年开始创作并连载于<a
+                    href="《明报》">《明报》</a>，1969年完成。这部小说通过叙述华山派大弟子令狐冲的江湖经历，反映了武林各派争霸夺权的历程。作品没有设置时代背景，“类似的情景可以发生在任何朝代”，折射出中国人独特的政治斗争状态，同时也表露出对斗争的哀叹，具有一定的政治寓意。小说情节跌宕起伏，波谲云诡，人物形象个性鲜明，生动可感。
+            </p>
+            <p style="text-indent: 2em;">
+                《笑傲江湖》自1967年4月20日至1969年10月12日连载于《明报》。“笑傲江湖”语出吴承恩《西游记》第九回“袁守诚妙算无私曲，老龙王拙计犯天条”中渔夫的“西江月”词中一句“得来烹煮味偏浓，笑傲江湖打哄”。
+            </p>
+            <img src="https://bkimg.cdn.bcebos.com/pic/cf1b9d16fdfaaf519dfc96ad8c5494eef01f7a80?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1"
+                alt="笑傲江湖">
+            <p style="text-indent: 2em;">
+                《笑傲江湖》的写作从1967年开始。当时的中国，“文化大革命”正在高潮。“<a
+                    href="#">文化大革命</a>”从1966年开始，1966年、1967年、1968年这三年是高潮期。或者根据一部分学者的看法，这三年是“真正的文革”。中共九大以后，其实已经和前面很不一样，进入了一个比较平稳的时期。文革不仅在中国大陆进行，也波及到香港。持右派立场的《明报》受到左派的围攻，而金庸本人一直就关心着天下大事，关注着中国的政治风云，所以他把当时对“文革”的思考，自觉不自觉地就融入了自己的小说创作。其实与此同时，金庸每天写的社评，本来就在一刻不停地评论着中国的现实，特别是他对“文革”中政治局势的判断每每都是出人意表，结果也被证明具有很高的准确性。
+            </p>
+        </div>
+        <div class="title_1">
+            <h1>另一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h3>文章作者 文章发布时间</h3>
+            <p style="text-indent: 2em;">
+                《天龙八部》是中国现代作家金庸创作的长篇武侠小说。这部小说从1963年开始创作，历时4年完成。前后共有三版，并在2005年第三版中经历6稿修订，结局改动较大。小说以宋哲宗时代为背景，通过宋、辽、<a
+                    href="https://baike.baidu.com/item/大理白族自治州/2916136?fromtitle=大理&fromid=32237&fr=aladdin">大理</a>、西夏、吐蕃等王国之间的武林恩怨和民族矛盾，从哲学的高度对人生和社会进行审视和描写，展示了一幅波澜壮阔的生活画卷。其故事之离奇曲折、涉及人物之众多、历史背景之广泛、武侠战役之庞大、想象力之丰富当属“金书”之最。作品风格宏伟悲壮，是一部写尽人性、悲剧色彩浓厚的史诗巨著。
+            </p>
+            <img src="https://bkimg.cdn.bcebos.com/pic/d439b6003af33a8774698a2cc75c10385343b584?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1"
+                alt="天龙八部">
+            <ul>
+                <li>
+                    这里不太明白要干啥？
+                </li>
+                <li>
+                    这里不太明白要干啥？
+                </li>
+                <li>
+                    这里不太明白要干啥？
+                </li>
+            </ul>
+        </div>
+        <div class="title_1">
+            <h1>图片</h1>
+            <div class="box">
+                <p>好看的图片</p>
+                <img src="https://bkimg.cdn.bcebos.com/pic/203fb80e7bec54e7f80981c9bd389b504ec26a04?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1"
+                    alt="">
+            </div>
+            <div class="box">
+                <p>好看的图片</p>
+                <img src="https://bkimg.cdn.bcebos.com/pic/242dd42a2834349b60d6b65ccdea15ce37d3be13?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1"
+                    alt="">
+            </div>
+            <div class="box">
+                <p>好看的图片</p>
+                <img src="https://bkimg.cdn.bcebos.com/pic/faedab64034f78f0b4a700247d310a55b2191cbc?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1"
+                    alt="">
+            </div>
+        </div>
+        <div class="title_2">
+            <h1>最后一篇文章一级标题</h1>
+            <h2>文章二级标题</h2>
+            <h3>文章作者 章发布时间</h3>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <table class="biaoge">
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr class="tr_bottom">
+                    <td>总计</td>
+                    <td>1000</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="title_1">
+            <h1>这是最后一个侧栏</h1>
+            <table class="zuihou">
+                <form action="">
+                    <tr>
+                        <td class="kaoyou">请输入邮箱地址</td>
+                        <td><input type="text" value="这是一个文本框"></td>
+                    </tr>
+                    <tr>
+                        <td class="kaoyou">请输入密码</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="kaoyou">请重复输入密码</td>
+                        <td> <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="mima">密码请为6-16位英文数字</td>
+                    </tr>
+                    <tr>
+                        <td class="kaoyou">性别</td>
+                        <td>
+                            男<input type="radio" name="sex" checked="checked">
+                            女<input type="radio" name="sex">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kaoyou">城市</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="city">北京</option>
+                                <option value="city">上海</option>
+                                <option value="city">成都</option>
+                                <option value="city" selected="selected">重庆</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kaoyou">爱好</td>
+                        <td>
+                            <input type="checkbox">运动
+                            <input type="checkbox">艺术
+                            <input type="checkbox">科学
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kaoyou">
+                            个人描述
+                        </td>
+                        <td>
+                            <textarea name="" id="" cols="60" rows="9">这是一个多行输入框，输入您个人的描述</textarea>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <div class="tijiao">
+                <input type="submit" value="确认提交">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom2">
+        <div>版权所有&copy</div>
+    </div>
+</body>
+
+</html>

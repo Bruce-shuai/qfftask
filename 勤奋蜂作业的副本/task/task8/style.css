@@ -1,0 +1,73 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px 60px 60px;
+    grid-template-areas: 
+    "f f f f o o o o u u u u"
+    "t t t s s s s s s h h h"
+    "n e w w r r x x x x x x";
+    /* 网格间隙 */
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "f f f f f f o o o o o o"
+            "u u u u u u u u u u u u"
+            "t t t s s s s s s h h h"
+            "n n e e w w w w w w w w"
+            "r r r x x x . . . . . .";
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+div {
+    border: 1px solid black;
+}
+.one {
+    grid-area: f;
+}
+
+.two {
+    grid-area: o;
+}
+
+.three {
+    grid-area: u;
+}
+
+.four {
+    grid-area: t;
+}
+
+.five {
+    grid-area: s;
+}
+
+.six {
+    grid-area: h;
+}
+
+.seven {
+    grid-area: n;
+}
+.eight {
+    grid-area: e;
+}
+
+.nine {
+    grid-area: w;
+}
+
+.ten {
+    grid-area: r;
+}
+
+.eleven {
+    grid-area: x;
+}

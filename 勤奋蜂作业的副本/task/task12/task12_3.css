@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+/* .w {
+    margin: 50px auto;
+} */
+
+@keyframes move1 {
+0%, 25%{left: 0;}
+25%, 50%{left: -300px;}
+50%, 75%{left: -600px;}
+75%, 100%{left: -900px;}
+100%, 0%{left: 0;}
+}
+
+
+.bottom {
+    /* position: relative;
+    right: -200px;
+    bottom: -109px; */
+    position: fixed;
+    left: 199px;
+    bottom: 252px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 124, 142, .3);
+}
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 138px;
+}
+
+.banner ul {
+    position: absolute;
+    width: 1200px;
+    height: 138px;
+    /* margin-left: 300px; */
+    /* background-color: pink; */
+    /* 动画名称 */
+    animation-name: move1;
+    /* 持续时间 */
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+img {
+    width: 300px;
+}
+
+.bottom a {
+    padding: 4px;
+    color: rgb(29, 60, 75);
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    color: #ffffffb6;
+}

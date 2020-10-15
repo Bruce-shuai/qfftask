@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{list-style: none; }
+ .baner-box{position: relative;width: 400px;height: 200px;overflow: hidden;}
+ .banner{width:1600px;position: absolute;left:0;animation-name: bannerMove;animation-duration: 8s;animation-iteration-count: infinite;}
+ @keyframes bannerMove {
+ 0%,30%{left: 0;}
+ 35%,65%{left: -400px; }
+ 70%,99%{left: -800px; }
+ 100%{left: -1200px; }
+ }
+ .banner li{float: left; width: 400px;height: 200px;}
+    </style>
+</head>
+<body>
+    <div class="baner-box">
+        <ul class="banner">
+        <li style="background-color:#f90;"></li>
+        <li style="background-color:#f00;"></li>
+        <li style="background-color:#9f0;"></li>
+        <li style="background-color:#333;"></li>
+        </ul> 
+        </div>
+</body>
+</html>
