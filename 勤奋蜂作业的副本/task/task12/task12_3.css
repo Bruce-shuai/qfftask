@@ -27,6 +27,7 @@ li {
     bottom: -109px; */
     position: fixed;
     left: 199px;
+    /*再次检查发现bottom这里好像又应该是552px怎么奇奇怪怪的？*/
     bottom: 252px;
     width: 100px;
     height: 30px;
