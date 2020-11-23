@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#area, input {
+    outline: none;
+}
+#area:focus, input:focus {
+    border-style: solid;
+    border-color: blueviolet;
+    box-shadow: 0 0 5px blueviolet;
+
+}
+
+input {
+    height: 26px;
+    margin-top: 130px;
+}
+#find, #insert {
+   width: 50px;
+   height: 34px; 
+   margin: 4px;
+   margin-top: 130px;
+}
+
+span {
+    background-color: red;
+}
